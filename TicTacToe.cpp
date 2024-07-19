@@ -23,7 +23,7 @@ int main(){
         board();
         int player = (player%2==0)  ?   2   :   1   ;
         symbol = (player%2==0)  ?   'O' :   'X';
-        cout<<"CHOICE OF "<<symbol<<" : ";
+        cout<<symbol<<"  PLAY YOUR MOVE TO ENTER {1 - 9} : ";
         cin>>b;
         if(b<1 ||  b>9){
             cout<<"SORRY ! INVALID INPUT...";
@@ -52,15 +52,15 @@ int main(){
     return 0;
 }
 void board(){
-    cout<<"       |      |      \n";
-    cout<<"  "<<a[1]<<"    |   "<<a[2]<<"  |   "<<a[3]<<"   \n";
-    cout<<"_______|______|______\n";
-    cout<<"       |      |      \n";
-    cout<<"  "<<a[4]<<"    |   "<<a[5]<<"  |   "<<a[6]<<"   \n";
-    cout<<"_______|______|______\n";
-    cout<<"       |      |      \n";
-    cout<<"  "<<a[7]<<"    |   "<<a[8]<<"  |   "<<a[9]<<"   \n";
-    cout<<"       |      |      \n";
+    cout<<"      |      |      \n";
+    cout<<" "<<a[1]<<"    |   "<<a[2]<<"  |   "<<a[3]<<"   \n";
+    cout<<"______|______|______\n";
+    cout<<"      |      |      \n";
+    cout<<" "<<a[4]<<"    |   "<<a[5]<<"  |   "<<a[6]<<"   \n";
+    cout<<"______|______|______\n";
+    cout<<"      |      |      \n";
+    cout<<" "<<a[7]<<"    |   "<<a[8]<<"  |   "<<a[9]<<"   \n";
+    cout<<"      |      |      \n";
 }
 void checkToWin(){
     if(a[1]==a[2]   &&  a[2]==a[3]){        //FOR ROWS
